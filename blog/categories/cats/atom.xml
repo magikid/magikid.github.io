@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Cats, | Chris W Jones]]></title>
+  <link href="http://magikid.github.io/blog/categories/cats/atom.xml" rel="self"/>
+  <link href="http://magikid.github.io/"/>
+  <updated>2014-11-04T20:55:40-05:00</updated>
+  <id>http://magikid.github.io/</id>
+  <author>
+    <name><![CDATA[Chris W Jones]]></name>
+    <email><![CDATA[chris@christopherjones.us]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Feline Diabetes]]></title>
+    <link href="http://magikid.github.io/cats,/finances/2014/11/04/finances/"/>
+    <updated>2014-11-04T20:36:41-05:00</updated>
+    <id>http://magikid.github.io/cats,/finances/2014/11/04/finances</id>
+    <content type="html"><![CDATA[<p>One of our cats, Leon, stopped eating this weekend.  He has been eating noticibly less for the past month or two and has gone from 15lbs to 9lbs.  I took him to the vet on Monday.  After blood work and x-rays, he has feline diabetes.  I didn&rsquo;t realize that cats could get diabetes but I guess anything with a pancreas can.  That means a significant change in his (and our) life with cats.  From here on out, we will be giving him twice daily insulin injections for the rest of his life.</p>
+
+<p>I&rsquo;m nervous about it.  Not just for Leon&rsquo;s sake but because it&rsquo;s expensive.  Hilary and I have been using (YNAB)[<a href="http://ynab.refr.cc/QK4PP9C">http://ynab.refr.cc/QK4PP9C</a>] for budgeting for a while now.  For those of you unfamiliar with it, it is a similar idea to budgeting with envelopes but it&rsquo;s all on computers (and mobile devices).  Using YNAB, we have stopped spending on our credit card &mdash; until today that is.  I&rsquo;m glad that we had an emergency fund going for just such an event.  It was a little less than we needed but I anticipate that the amount we put on the credit card today will be paid off within the next 2-3 months without lowering our standard of living too much.</p>
+
+<p>From what I have read on the internet, the cost of supporting a cat with feline diabetes is around $250 every six months in supplies not including any vet trips which seem to be fairly regular too.  Just like in humans, we have to track glucose levels in the blood to give a good dose of insulin.  I&rsquo;m hoping to talk to the vet and arrange for home testing.  The internet seems to think that there is no need to visit the vet for these types of simple tests.  It is the exact same as glucose monitoring in humans.</p>
+]]></content>
+  </entry>
+  
+</feed>
