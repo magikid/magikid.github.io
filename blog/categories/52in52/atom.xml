@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 52in52 | Chris W Jones]]></title>
+  <link href="http://christopherjones.us/blog/categories/52in52/atom.xml" rel="self"/>
+  <link href="http://christopherjones.us/"/>
+  <updated>2015-02-26T19:06:23-05:00</updated>
+  <id>http://christopherjones.us/</id>
+  <author>
+    <name><![CDATA[Chris W Jones]]></name>
+    <email><![CDATA[chris@christopherjones.us]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Blogging Habit]]></title>
+    <link href="http://christopherjones.us/52in52/2015/02/26/a-blogging-habit/"/>
+    <updated>2015-02-26T18:50:30-05:00</updated>
+    <id>http://christopherjones.us/52in52/2015/02/26/a-blogging-habit</id>
+    <content type="html"><![CDATA[<p>I was listening to <a href="http://www.developertea.com/">Developer Tea</a> yesterday and they were discussing the merits of having a personal blog and marketing yourself as a developer.</p>
+]]></content>
+  </entry>
+  
+</feed>
