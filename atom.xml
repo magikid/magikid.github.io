@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Chris W Jones]]></title>
-  <link href="http://christopherjones.us/atom.xml" rel="self"/>
-  <link href="http://christopherjones.us/"/>
-  <updated>2015-02-26T19:06:23-05:00</updated>
-  <id>http://christopherjones.us/</id>
+  <link href="http://magikid.github.io/atom.xml" rel="self"/>
+  <link href="http://magikid.github.io/"/>
+  <updated>2015-02-28T18:31:01-05:00</updated>
+  <id>http://magikid.github.io/</id>
   <author>
     <name><![CDATA[Chris W Jones]]></name>
     <email><![CDATA[chris@christopherjones.us]]></email>
@@ -15,21 +15,70 @@
   
   <entry>
     <title type="html"><![CDATA[A Blogging Habit]]></title>
-    <link href="http://christopherjones.us/52in52/2015/02/26/a-blogging-habit/"/>
+    <link href="http://magikid.github.io/52in52/2015/02/26/a-blogging-habit/"/>
     <updated>2015-02-26T18:50:30-05:00</updated>
-    <id>http://christopherjones.us/52in52/2015/02/26/a-blogging-habit</id>
-    <content type="html"><![CDATA[<p>I was listening to <a href="http://www.developertea.com/">Developer Tea</a> yesterday and they were discussing the merits of having a personal blog and marketing yourself as a developer.</p>
+    <id>http://magikid.github.io/52in52/2015/02/26/a-blogging-habit</id>
+    <content type="html"><![CDATA[<p>I was listening to <a href="http://www.developertea.com/">Developer Tea</a> yesterday and they were discussing the merits of having a personal blog and marketing yourself as a developer.  I set this blog up last fall as a spot for me to journal.  I think rather than using it as a journal, I will try to discuss mainly programming related topics from now on.</p>
+
+<p>I will be discussing projects that I&rsquo;m working on and new techniques that I&rsquo;m learning.</p>
+
+<p>This week, I&rsquo;ve been exploring <a href="http://joelonsoftware.com/articles/fog0000000043.html">12 Steps To Better Code</a> by Joel Spolsky.  Going through this list, they don&rsquo;t all make sense for me as a long coder working on a website.  I&rsquo;ll still go through all of them.</p>
+
+<!-- more -->
+
+
+<ol>
+<li><p>Do you use source control?</p>
+
+<p>This one is easy.  Yes, I use source control for all of my projects.  It gives me such peace of mind knowing that when I make a mistake, I can quickly and easily fix it.  My source control of choice is <code>git</code> but I won&rsquo;t hold it against anyone for using <code>hg</code>.</p></li>
+<li><p>Can you make a build in one step?</p>
+
+<p>For this question, I&rsquo;m going to say that build means deploy the current version of the site.  The answer to this is yes.  I mainly accomplish this by using the correct tools for the correct language.  When I&rsquo;m writing a traditional rails application, I use the asset pipeline.  When I&rsquo;m writing an angular app, I use yo, bower and grunt.  When I&rsquo;m not writing a web app, I still have a script that builds or runs the application.</p></li>
+<li><p>Do you make daily builds?</p>
+
+<p>This one is, I guess, yes.  I make daily builds when I&rsquo;m working on a project, especially for web development.</p></li>
+<li><p>Do you have a bug database?</p>
+
+<p>Yes.  I tend to use GitHub (or at work GitLab) Issues for bug tracking.</p></li>
+<li><p>Do you fix bugs before writing new code?</p>
+
+<p>It depends on the schedule.  Since I&rsquo;m a one-man coding shop, I try to balance new features with backlog fixes.</p></li>
+<li><p>Do you have an up-to-date schedule?</p>
+
+<p>For loose definitions of schedule, yes.  I try to put estimates on the issues that I open and assign them to milestones which have deadlines.</p></li>
+<li><p>Do you have a spec?</p>
+
+<p>This is a new one I can answer yes to.  I recently (read last week) started writing a spec for my current project.  I haven&rsquo;t started any coding on it.  One of the stakeholders came over and was talking to me about things he would like to see.  Where we differed, it was so easy to update the spec with his requests.</p></li>
+<li><p>Do programmers have quiet working conditions?</p>
+
+<p>Yes. Bose QC15&rsquo;s help a lot.</p></li>
+<li><p>Do you use the best tools money can buy?</p>
+
+<p>When I&rsquo;m at home I do.  When I&rsquo;m at work, it&rsquo;s a different story.  I have some good tools but I wouldn&rsquo;t say they&rsquo;re the best.  My biggest complaint is that I can&rsquo;t get Sublime Text installed.  I have to resort to using Notepad++.</p></li>
+<li><p>Do you have testers?</p>
+
+<p>Not really.  I don&rsquo;t always write tests, unit or otherwise.  I&rsquo;ve tried in the past but since until recently I had to resort to Cygwin, that made writing tests impractical.</p></li>
+<li><p>Do new candidates write code during their interview?</p>
+
+<p>Not applicable to me.</p></li>
+<li><p>Do you do hallway usability testing?</p>
+
+<p>If my wife counts then yes, I do.  She gets tormented by me when I need an average person to test something.</p></li>
+</ol>
+
+
+<p>In wrapping up, I came up with 11/12 which Joel says is tolerable.  I have to agree.  I can&rsquo;t complain about my programming conditions.  PS for those of you wondering about my cat Leon, he&rsquo;s doing well.  In my last post, he had developed Feline Diabetes.  It turns out that cats can recover from diabetes.  Scientists aren&rsquo;t sure how but that&rsquo;s what happened to Leon.  He is back to his old licky, annoying self.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Feline Diabetes]]></title>
-    <link href="http://christopherjones.us/aom/2014/11/04/Feline-Diabetes/"/>
+    <link href="http://magikid.github.io/aom/2014/11/04/Feline-Diabetes/"/>
     <updated>2014-11-04T20:36:41-05:00</updated>
-    <id>http://christopherjones.us/aom/2014/11/04/Feline-Diabetes</id>
+    <id>http://magikid.github.io/aom/2014/11/04/Feline-Diabetes</id>
     <content type="html"><![CDATA[<p>One of our cats, Leon, stopped eating this weekend.  He has been eating noticibly less for the past month or two and has gone from 15lbs to 9lbs.  I took him to the vet on Monday.  After blood work and x-rays, he has feline diabetes.  I didn&rsquo;t realize that cats could get diabetes but I guess anything with a pancreas can.  That means a significant change in his (and our) life with cats.  From here on out, we will be giving him twice daily insulin injections for the rest of his life.</p>
 
-<p>I&rsquo;m nervous about it.  Not just for Leon&rsquo;s sake but because it&rsquo;s expensive.  Hilary and I have been using (YNAB)[<a href="http://ynab.refr.cc/QK4PP9C">http://ynab.refr.cc/QK4PP9C</a>] for budgeting for a while now.  For those of you unfamiliar with it, it is a similar idea to budgeting with envelopes but it&rsquo;s all on computers (and mobile devices).  Using YNAB, we have stopped spending on our credit card &mdash; until today that is.  I&rsquo;m glad that we had an emergency fund going for just such an event.  It was a little less than we needed but I anticipate that the amount we put on the credit card today will be paid off within the next 2-3 months without lowering our standard of living too much.</p>
+<p>I&rsquo;m nervous about it.  Not just for Leon&rsquo;s sake but because it&rsquo;s expensive.  Hilary and I have been using <a href="http://ynab.refr.cc/QK4PP9C">YNAB</a> for budgeting for a while now.  For those of you unfamiliar with it, it is a similar idea to budgeting with envelopes but it&rsquo;s all on computers (and mobile devices).  Using YNAB, we have stopped spending on our credit card &mdash; until today that is.  I&rsquo;m glad that we had an emergency fund going for just such an event.  It was a little less than we needed but I anticipate that the amount we put on the credit card today will be paid off within the next 2-3 months without lowering our standard of living too much.</p>
 
 <p>From what I have read on the internet, the cost of supporting a cat with feline diabetes is around $250 every six months in supplies not including any vet trips which seem to be fairly regular too.  Just like in humans, we have to track glucose levels in the blood to give a good dose of insulin.  I&rsquo;m hoping to talk to the vet and arrange for home testing.  The internet seems to think that there is no need to visit the vet for these types of simple tests.  It is the exact same as glucose monitoring in humans.</p>
 ]]></content>
@@ -37,9 +86,9 @@
   
   <entry>
     <title type="html"><![CDATA[16 Book Blurb]]></title>
-    <link href="http://christopherjones.us/aom/2014/07/24/16-Book-Blurb/"/>
+    <link href="http://magikid.github.io/aom/2014/07/24/16-Book-Blurb/"/>
     <updated>2014-07-24T20:36:00-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/07/24/16-Book-Blurb</id>
+    <id>http://magikid.github.io/aom/2014/07/24/16-Book-Blurb</id>
     <content type="html"><![CDATA[<p><em>Day 16: Imagine that someone has decided to write a book about your life, just up to this point. What would the cover blurb say? Be honest here. Is it kind of boring? Are you happy with it? Now imagine what you’d like that blurb to say at the end of your life. What changes need to made for that to happen?</em></p>
 
 <p>This prompt seems to think that up until this point in my life, I have done nothing interesting or noteworthy.  I wonder if that doesn&rsquo;t speak to who the author thinks is their target audience.  Personally, I feel like they&rsquo;re talking down to me.  I think that if someone were to write a book about my life up to this point, it might not be Harry Potter but it would be better than some of the trash that I&rsquo;ve read in the last 5 years.  Depending on how the rest of my life goes, my life could rank up there with many well known figures.  Dropped out of college and joined the military?  That sounds like presidential material to me.  Not to mention my job in the Air Force and all the interesting things that I do there.  Ultimately, I&rsquo;d say that life is going how I want it to for now.  I think that having a plan helps me to be more satisfied with life than some of my contemporaries.  I know where I&rsquo;ve been, I&rsquo;ve learned some lessons, and I ultimately see where I want to go (if not the exact route).</p>
@@ -50,9 +99,9 @@
   
   <entry>
     <title type="html"><![CDATA[15 Cabinet of Invisible Counselors]]></title>
-    <link href="http://christopherjones.us/aom/2014/07/22/15-Cabinet-of-Invisible-Counselors/"/>
+    <link href="http://magikid.github.io/aom/2014/07/22/15-Cabinet-of-Invisible-Counselors/"/>
     <updated>2014-07-22T21:03:32-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/07/22/15-Cabinet-of-Invisible-Counselors</id>
+    <id>http://magikid.github.io/aom/2014/07/22/15-Cabinet-of-Invisible-Counselors</id>
     <content type="html"><![CDATA[<p><em>Day 15: Come up with your own Cabinet of Invisible Counselors. There are innumerable great men from history who we can learn from today. When thinking about your life or pondering some question or problem, yes, go to actual mentors and friends, but also take in the advice of men of yore. Write out who you would have on your list and what you admire about them. Having trouble coming up with a list? The comments in the post should offer plenty of ideas.</em></p>
 
 <!-- more -->
@@ -68,9 +117,9 @@
   
   <entry>
     <title type="html"><![CDATA[14 Book Review]]></title>
-    <link href="http://christopherjones.us/aom/2014/06/07/14-Book-review/"/>
+    <link href="http://magikid.github.io/aom/2014/06/07/14-Book-review/"/>
     <updated>2014-06-07T20:48:00-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/06/07/14-Book-review</id>
+    <id>http://magikid.github.io/aom/2014/06/07/14-Book-review</id>
     <content type="html"><![CDATA[<p><em>Day 14: Write a review of some form of entertainment you recently took in. Whether book or movie or TV show or Broadway play, write out what you liked and didn’t like about it. Was the acting/writing good? Could you follow the story? Is there anything you can take from it about life, or was it purely entertainment? This is often one of the most enjoyable entries to write, as it’s especially fun (and quite nostalgic) to go back and read these in the future. I can imagine that 10 years from now I will thoroughly appreciate my thoughts from this week on Roy Baumeister’s Is There Anything Good About Men?.</em></p>
 
 <!-- more -->
@@ -86,9 +135,9 @@
   
   <entry>
     <title type="html"><![CDATA[13 Mind Dump]]></title>
-    <link href="http://christopherjones.us/aom/2014/05/30/13-Mind-Dump/"/>
+    <link href="http://magikid.github.io/aom/2014/05/30/13-Mind-Dump/"/>
     <updated>2014-05-30T20:43:00-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/05/30/13-Mind-Dump</id>
+    <id>http://magikid.github.io/aom/2014/05/30/13-Mind-Dump</id>
     <content type="html"><![CDATA[<p><em>Day 13: Perform a mind dump of everything you’re worried about. From the leaky dishwasher to your family member’s poor health — get it all out. Dwight D. Eisenhower did it, and it significantly helped him manage his stress. Just as your body needs to… cleanse itself of waste, so does your mind every once in a while. Getting all your stressors on paper may alleviate some of that pressure. Use <a href="http://wiki.43folders.com/index.php/Trigger_List">David Allen’s GTD trigger</a> list to help you out.</em></p>
 
 <!-- more -->
@@ -142,9 +191,9 @@
   
   <entry>
     <title type="html"><![CDATA[12 Stream of Thought]]></title>
-    <link href="http://christopherjones.us/aom/2014/05/19/12-Stream-of-thought/"/>
+    <link href="http://magikid.github.io/aom/2014/05/19/12-Stream-of-thought/"/>
     <updated>2014-05-19T21:36:00-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/05/19/12-Stream-of-thought</id>
+    <id>http://magikid.github.io/aom/2014/05/19/12-Stream-of-thought</id>
     <content type="html"><![CDATA[<p><em>Day 12: Give stream-of-consciousness writing a try. This is where you basically just write out whatever comes into your head at the moment it comes into your head. It can feel bizarre, and it’s certainly not structured, but it can lead to some valuable insights into what’s going on in your mind. I’ll give you a 10-second example from right now, while looking out my window: “Boy, I have a nice-looking grill outside and the weather is beautiful…just what we need after all this cold and snow. That butt looks like a ship from Star Wars… it makes me want to be outside.. maybe I need to spend more time outside and appreciate the fresh air. Perhaps I’ll open a window!” Random? Absolutely. Offering some helpful insight about my desire/need for fresh air? Affirmative. Try this out for 10-15 minutes. You may uncover something — no matter how small — you hadn’t previously realized.</em></p>
 
 <!-- more -->
@@ -156,9 +205,9 @@
   
   <entry>
     <title type="html"><![CDATA[11 Memento Mori]]></title>
-    <link href="http://christopherjones.us/aom/2014/05/05/11-Memento-Mori/"/>
+    <link href="http://magikid.github.io/aom/2014/05/05/11-Memento-Mori/"/>
     <updated>2014-05-05T17:25:00-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/05/05/11-Memento-Mori</id>
+    <id>http://magikid.github.io/aom/2014/05/05/11-Memento-Mori</id>
     <content type="html"><![CDATA[<p><em>Day 11: Memento mori. “Remember that you will die.” Admittedly, this isn’t the most pleasant topic. There is, however, great benefit in meditating on the reality that at some point, you will in fact die. It motivates you to live the life right now that you want to be living. Meditate on this, and write out your thoughts. Does death scare you? Does it motivate you? It’s okay to be honest.</em></p>
 
 <!-- more -->
@@ -174,9 +223,9 @@
   
   <entry>
     <title type="html"><![CDATA[10 Hero's Journey]]></title>
-    <link href="http://christopherjones.us/aom/2014/04/28/10-Heros-Journey/"/>
+    <link href="http://magikid.github.io/aom/2014/04/28/10-Heros-Journey/"/>
     <updated>2014-04-28T15:44:00-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/04/28/10-Heros-Journey</id>
+    <id>http://magikid.github.io/aom/2014/04/28/10-Heros-Journey</id>
     <content type="html"><![CDATA[<p><em>Day 10: Take a look at the <a href="http://www.artofmanliness.com/2013/07/11/heros-journey/">hero’s journey</a>, and identify where you are in that journey. Doing so can help you better understand where you are in life, and help you figure out where to go next. You can take it in the context of your entire life, or you can take it in the context of a certain phase of your life. Either way, you can be sure that you’re part of a greater journey, and knowing what comes next can help guide you along.</em></p>
 
 <!-- more -->
@@ -194,9 +243,9 @@
   
   <entry>
     <title type="html"><![CDATA[9 My Day]]></title>
-    <link href="http://christopherjones.us/aom/2014/04/15/9-Day/"/>
+    <link href="http://magikid.github.io/aom/2014/04/15/9-Day/"/>
     <updated>2014-04-15T09:46:00-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/04/15/9-Day</id>
+    <id>http://magikid.github.io/aom/2014/04/15/9-Day</id>
     <content type="html"><![CDATA[<p><em>Day 9: On this day, simply write about your day. This may seem especially boring, but write out the events of your day. What time you woke up, what you had for breakfast, what your commute was like, what you did during at work, how you spent your evening. If you’re journaling in the mornings, write about the previous day. The beauty of this exercise is that you may discover something that you hadn’t realized. Maybe you weren’t very productive at work, and reflecting on it can allow you to analyze why. Perhaps you finished a big project on the house when you got home; you can think about what motivated you, how it made you feel to finish something big, etc. Don’t discount the seemingly simple task of writing about your day.</em></p>
 
 <!-- more -->
@@ -233,9 +282,9 @@ her up.</p>
   
   <entry>
     <title type="html"><![CDATA[8 Career]]></title>
-    <link href="http://christopherjones.us/aom/2014/03/30/8-Career/"/>
+    <link href="http://magikid.github.io/aom/2014/03/30/8-Career/"/>
     <updated>2014-03-30T15:30:32-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/03/30/8-Career</id>
+    <id>http://magikid.github.io/aom/2014/03/30/8-Career</id>
     <content type="html"><![CDATA[<p><em>Day 8: Take some time today to reflect on your career. Jot down a timeline of it, including all the ups and downs. What was your best experience? And the worst? What would you like your future to look like, in terms of your career? If you’re a young man and haven’t started in yet, focus on that future part. What do you want your work to look like?</em></p>
 
 <!-- more -->
@@ -303,9 +352,9 @@ her up.</p>
   
   <entry>
     <title type="html"><![CDATA[7 Weekly Review]]></title>
-    <link href="http://christopherjones.us/aom/2014/03/22/7-Day-7-review/"/>
+    <link href="http://magikid.github.io/aom/2014/03/22/7-Day-7-review/"/>
     <updated>2014-03-22T17:03:32-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/03/22/7-Day-7-review</id>
+    <id>http://magikid.github.io/aom/2014/03/22/7-Day-7-review</id>
     <content type="html"><![CDATA[<p><em>Day 7: You’ve made it one week! Reflect on what this newfound practice has been like. Getting through the first seven consecutive days is truly the hardest part. Have you enjoyed it? Has it been difficult? Has it been what you expected?</em></p>
 
 <!-- more -->
@@ -322,9 +371,9 @@ And now for something completely different.  I am currently in ALS.  I have been
   
   <entry>
     <title type="html"><![CDATA[6 Quote Thoughts]]></title>
-    <link href="http://christopherjones.us/aom/2014/03/10/6-Quote-Thoughts/"/>
+    <link href="http://magikid.github.io/aom/2014/03/10/6-Quote-Thoughts/"/>
     <updated>2014-03-10T21:03:32-04:00</updated>
-    <id>http://christopherjones.us/aom/2014/03/10/6-Quote-Thoughts</id>
+    <id>http://magikid.github.io/aom/2014/03/10/6-Quote-Thoughts</id>
     <content type="html"><![CDATA[<p><em>Day 6: Pick a quote from our 80-ish quotes on manhood and reflect on why it stands out to you. Does it reflect a man that you aren’t yet, but hope to be? Does one of them remind you of a great man in your life who you’ve tried to model? If you can’t seem to reflect on a single quote, just take the time to write out a few of them that you like. Doing so will keep them top-of-mind and perhaps lead to some thoughts later down the road.</em></p>
 
 <!-- more -->
@@ -340,9 +389,9 @@ And now for something completely different.  I am currently in ALS.  I have been
   
   <entry>
     <title type="html"><![CDATA[5 Unsent Letter]]></title>
-    <link href="http://christopherjones.us/aom/2014/03/02/5-Unsent-Letter/"/>
+    <link href="http://magikid.github.io/aom/2014/03/02/5-Unsent-Letter/"/>
     <updated>2014-03-02T08:42:00-05:00</updated>
-    <id>http://christopherjones.us/aom/2014/03/02/5-Unsent-Letter</id>
+    <id>http://magikid.github.io/aom/2014/03/02/5-Unsent-Letter</id>
     <content type="html"><![CDATA[<p><strong>Write a letter to a loved one</strong></p>
 
 <!-- more -->
@@ -362,9 +411,9 @@ And now for something completely different.  I am currently in ALS.  I have been
   
   <entry>
     <title type="html"><![CDATA[4 via Negativa]]></title>
-    <link href="http://christopherjones.us/aom/2014/02/15/4-Via-Negativa/"/>
+    <link href="http://magikid.github.io/aom/2014/02/15/4-Via-Negativa/"/>
     <updated>2014-02-15T20:48:00-05:00</updated>
-    <id>http://christopherjones.us/aom/2014/02/15/4-Via-Negativa</id>
+    <id>http://magikid.github.io/aom/2014/02/15/4-Via-Negativa</id>
     <content type="html"><![CDATA[<p><em>Day 4: Via negativia; today, pick a habit that you’d like to eliminate from your life. Bad habits are like armpits, we all have ‘em and they all stink. Whether cutting soda out of your life, or putting a stop to your porn addiction; either way, as with yesterday, think about the steps you’ll take in order to put the kibosh on that negative habit. And again, also think about how you’ll keep yourself accountable to that goal.</em></p>
 
 <!-- more -->
@@ -376,9 +425,9 @@ And now for something completely different.  I am currently in ALS.  I have been
   
   <entry>
     <title type="html"><![CDATA[3 Positive Habit]]></title>
-    <link href="http://christopherjones.us/aom/2014/02/15/3-Positive-Habit/"/>
+    <link href="http://magikid.github.io/aom/2014/02/15/3-Positive-Habit/"/>
     <updated>2014-02-15T00:00:00-05:00</updated>
-    <id>http://christopherjones.us/aom/2014/02/15/3-Positive-Habit</id>
+    <id>http://magikid.github.io/aom/2014/02/15/3-Positive-Habit</id>
     <content type="html"><![CDATA[<p><em>Day 3: Decide on one positive habit you’d like to implement in your life. Whether seemingly mundane (like flossing) or perhaps life-altering (exercising every day), think of something you’d like to add to your life that will be beneficial. Then, think about the steps you’ll take to get there, and how you’ll keep yourself accountable</em></p>
 
 <!-- more -->

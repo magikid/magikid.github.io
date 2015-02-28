@@ -9,8 +9,7 @@
   <meta name="author" content="Chris W Jones">
 
   
-  <meta name="description" content="I was listening to Developer Tea yesterday and they were discussing the merits of having a personal blog and marketing yourself as a developer.
-">
+  <meta name="description" content="I was listening to Developer Tea yesterday and they were discussing the merits of having a personal blog and marketing yourself as a developer. I set &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://christopherjones.us/52in52/2015/02/26/a-blogging-habit">
+  <link rel="canonical" href="http://magikid.github.io/52in52/2015/02/26/a-blogging-habit">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Chris W Jones" type="application/atom+xml">
@@ -56,29 +55,35 @@
 </hgroup>
 
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" title="subscribe via RSS"><i class="fa fa-2x fa-rss-square"></i>
+</a></li>
+  
+    <li><a href="/subscribe/index.html" title="subscribe via email"><i class="fa fa-2x fa-envelope-square"></i></a></li>
   
 </ul>
   
   
 <ul class="subscription">
-  <li><a href="https://pinboard.in/u:magikid" rel="subscribe-pinboard" title="Pinboard Bookmarks">Pinboard</a></li>
+  <li><a href="https://pinboard.in/u:magikid" title="Latest Pinboard Bookmarks" target="_blank"><i class="fa fa-2x fa-bookmark"></i></a></li>
 </ul>
   
   
   
   
 <ul class="subscription">
-  <li><a href="https://github.com/magikid" rel="subscribe-github" title="@magikid on GitHub">GitHub</a></li>
+  <li><a href="https://github.com/magikid" title="@magikid on GitHub" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
 </ul>
   
   
+<ul class="subscription">
+  <li><a href="https://gratipay.com/magikid" title="@magikid on Gratipay" target="_blank"><i class="fa fa-2x fa-gratipay"></i></a></li>
+</ul>
   
   
 <form action="https://www.google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:christopherjones.us" />
+    <input type="hidden" name="q" value="site:magikid.github.io" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -121,7 +126,56 @@
   </header>
 
 
-<div class="entry-content"><p>I was listening to <a href="http://www.developertea.com/">Developer Tea</a> yesterday and they were discussing the merits of having a personal blog and marketing yourself as a developer.</p>
+<div class="entry-content"><p>I was listening to <a href="http://www.developertea.com/">Developer Tea</a> yesterday and they were discussing the merits of having a personal blog and marketing yourself as a developer.  I set this blog up last fall as a spot for me to journal.  I think rather than using it as a journal, I will try to discuss mainly programming related topics from now on.</p>
+
+<p>I will be discussing projects that I&rsquo;m working on and new techniques that I&rsquo;m learning.</p>
+
+<p>This week, I&rsquo;ve been exploring <a href="http://joelonsoftware.com/articles/fog0000000043.html">12 Steps To Better Code</a> by Joel Spolsky.  Going through this list, they don&rsquo;t all make sense for me as a long coder working on a website.  I&rsquo;ll still go through all of them.</p>
+
+<!-- more -->
+
+
+<ol>
+<li><p>Do you use source control?</p>
+
+<p>This one is easy.  Yes, I use source control for all of my projects.  It gives me such peace of mind knowing that when I make a mistake, I can quickly and easily fix it.  My source control of choice is <code>git</code> but I won&rsquo;t hold it against anyone for using <code>hg</code>.</p></li>
+<li><p>Can you make a build in one step?</p>
+
+<p>For this question, I&rsquo;m going to say that build means deploy the current version of the site.  The answer to this is yes.  I mainly accomplish this by using the correct tools for the correct language.  When I&rsquo;m writing a traditional rails application, I use the asset pipeline.  When I&rsquo;m writing an angular app, I use yo, bower and grunt.  When I&rsquo;m not writing a web app, I still have a script that builds or runs the application.</p></li>
+<li><p>Do you make daily builds?</p>
+
+<p>This one is, I guess, yes.  I make daily builds when I&rsquo;m working on a project, especially for web development.</p></li>
+<li><p>Do you have a bug database?</p>
+
+<p>Yes.  I tend to use GitHub (or at work GitLab) Issues for bug tracking.</p></li>
+<li><p>Do you fix bugs before writing new code?</p>
+
+<p>It depends on the schedule.  Since I&rsquo;m a one-man coding shop, I try to balance new features with backlog fixes.</p></li>
+<li><p>Do you have an up-to-date schedule?</p>
+
+<p>For loose definitions of schedule, yes.  I try to put estimates on the issues that I open and assign them to milestones which have deadlines.</p></li>
+<li><p>Do you have a spec?</p>
+
+<p>This is a new one I can answer yes to.  I recently (read last week) started writing a spec for my current project.  I haven&rsquo;t started any coding on it.  One of the stakeholders came over and was talking to me about things he would like to see.  Where we differed, it was so easy to update the spec with his requests.</p></li>
+<li><p>Do programmers have quiet working conditions?</p>
+
+<p>Yes. Bose QC15&rsquo;s help a lot.</p></li>
+<li><p>Do you use the best tools money can buy?</p>
+
+<p>When I&rsquo;m at home I do.  When I&rsquo;m at work, it&rsquo;s a different story.  I have some good tools but I wouldn&rsquo;t say they&rsquo;re the best.  My biggest complaint is that I can&rsquo;t get Sublime Text installed.  I have to resort to using Notepad++.</p></li>
+<li><p>Do you have testers?</p>
+
+<p>Not really.  I don&rsquo;t always write tests, unit or otherwise.  I&rsquo;ve tried in the past but since until recently I had to resort to Cygwin, that made writing tests impractical.</p></li>
+<li><p>Do new candidates write code during their interview?</p>
+
+<p>Not applicable to me.</p></li>
+<li><p>Do you do hallway usability testing?</p>
+
+<p>If my wife counts then yes, I do.  She gets tormented by me when I need an average person to test something.</p></li>
+</ol>
+
+
+<p>In wrapping up, I came up with 11/12 which Joel says is tolerable.  I have to agree.  I can&rsquo;t complain about my programming conditions.  PS for those of you wondering about my cat Leon, he&rsquo;s doing well.  In my last post, he had developed Feline Diabetes.  It turns out that cats can recover from diabetes.  Scientists aren&rsquo;t sure how but that&rsquo;s what happened to Leon.  He is back to his old licky, annoying self.</p>
 </div>
 
 
@@ -158,7 +212,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://christopherjones.us/52in52/2015/02/26/a-blogging-habit/" data-via="magikid" data-counturl="http://christopherjones.us/52in52/2015/02/26/a-blogging-habit/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://magikid.github.io/52in52/2015/02/26/a-blogging-habit/" data-via="magikid" data-counturl="http://magikid.github.io/52in52/2015/02/26/a-blogging-habit/" >Tweet</a>
   
   
   
