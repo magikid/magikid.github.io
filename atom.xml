@@ -4,7 +4,7 @@
   <title><![CDATA[Chris W Jones]]></title>
   <link href="http://magikid.github.io/atom.xml" rel="self"/>
   <link href="http://magikid.github.io/"/>
-  <updated>2015-02-28T18:51:43-05:00</updated>
+  <updated>2015-03-12T21:10:04-04:00</updated>
   <id>http://magikid.github.io/</id>
   <author>
     <name><![CDATA[Chris W Jones]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Busy Life]]></title>
+    <link href="http://magikid.github.io/52in52/2015/03/12/busy-life/"/>
+    <updated>2015-03-12T21:01:25-04:00</updated>
+    <id>http://magikid.github.io/52in52/2015/03/12/busy-life</id>
+    <content type="html"><![CDATA[<p>Life Is getting busy for me. In about two weeks my wife, Hilary, and I will be moving. In addition to that, I have an astronomy class that just finished and a discrete math class that starts on Monday. I also have a busy schedule when I&rsquo;m at work.</p>
+
+<p>This isn&rsquo;t the first time that I have found the pace of life picking up.  I have found that when I get stressed out about having a lot on my plate, the best thing I can do is control what I can and try to not let the rest bother me.  That means that I have been making schedules and lists for the upcoming move and taking things in stride when the don&rsquo;t work out like I want.  For example, a townhouse that we were interested was pulled off the market the day that we were going to view it. Frustrating.</p>
+
+<p>Two points that I always keep on my schedule though are reading and programming.  Sometimes <a href="https://pinboard.in/u:magikid/t:feedly/">they overlap</a> when I get especially busy. Currently, I&rsquo;m reading <a href="https://www.goodreads.com/review/show/913989470">Murder at the Vicarage</a> by Agatha Christie.  It&rsquo;s a little outside my usual genre of hard sci-fi/space opera but I&rsquo;m enjoying it so far.  It&rsquo;s going to be a quick read.</p>
+
+<p>As for programming, I&rsquo;m still working on my bibliophilium site but slowly. I want to start correctly so that I don&rsquo;t get a few months in and wish I had done things differently.  That involves researching implementations.  Also, moving kind of eats into my programming time.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Project Committal]]></title>
+    <link href="http://magikid.github.io/52in52/2015/03/04/projects/"/>
+    <updated>2015-03-04T20:13:41-05:00</updated>
+    <id>http://magikid.github.io/52in52/2015/03/04/projects</id>
+    <content type="html"><![CDATA[<p>I have had a lot of problems with starting projects and not following through.  It took me about a year to work through the Ruby koans <small><a href="http://rubykoans.com/">official site</a>|<a href="https://github.com/magikid/my-ruby-koans">my code</a></small>.  And they were simple programming exercises designed to introduce you to the language.  <strong>I say no more</strong>.</p>
+
+<p>This is the year that I stop starting without finishing, at least where programming is involved.  I have recently started a new project that I intend to be a sort-of showcase for my website building skills.  So far, I just have the idea but I want to start it right from the very beginning.  To that end, before I write a single line of code, I will be writing a <a href="https://github.com/magikid/bibliophilium/wiki/functional-spec">functional spec</a> which lays out the user interaction with the site.  It is much easier to pick out issues with the design when they&rsquo;re just ideas on paper.  This will be completed by next Wednesday (11 March 2015).</p>
+
+<p>An example of when writing a spec first came in handy.  I recently started a new project at work.  It will be a fairly simple site to create but it has some very demanding customers.  Before I started to write the code for their website, I sat down and wrote a spec for their site.  I laid out all the different pages of the website.  I wrote down likely use scenarios for the website.  I put in things that I wouldn&rsquo;t be supporting during development.</p>
+
+<p>One of the customers came to visit me and discuss his ideas for the website.  Because I had already formulated my ideas for user interactions, I was able to show him that we were already on the same page in our thinking.  I was also able to assure him that I didn&rsquo;t want to obliterate his current workflow and destroy his productivity with my design.  The best part for me was not having to completely explain myself to him since I&rsquo;d already done that in the document.  I was able to send him a link and say, read it yourself.</p>
+
+<p>Back to my library project: the idea came for this site came to me because of the lack of decent library software.  No seriously.  Look around if you don&rsquo;t believe me.  I just want a decent website that is mobile friendly to manage my books.  It would be great if it integrated with Amazon to pull in book covers too.  That in a nutshell is my new project.  I will be building a library management website.  I&rsquo;m sure this won&rsquo;t be my last post on the subject.</p>
+
+<p>For the programmers in the audience, here&rsquo;s what my thinking is for that side of the house.  I&rsquo;d love to use modern programming standards for this.  The back end will be coded using my beloved Ruby language.  I haven&rsquo;t decided if I will use a full <a href="http://rubyonrails.org/">Ruby on Rails</a> stack or a Rack application like <a href="https://intridea.github.io/grape/">Grape</a> for the API.  I&rsquo;m planning on using the <a href="http://jsonapi.org/">JSON API</a> standard either way for communication with the front end.  Speaking of, I want to use a javascript framework like <a href="https://angularjs.org/">AngularJS</a> for the front end of the website.  That way the website has a very responsive feel to it.  I also would like to learn more about how to create a full website with AngularJS.</p>
+
+<p>I&rsquo;ve been dabbling around with javascript frameworks for about two weeks now.  I&rsquo;ve tried out both AngularJS and <a href="http://emberjs.com/">EmberJS</a>.  I liked the models aspect of Ember more, especially since Angular doesn&rsquo;t have anything close to models.  But after playing around some and exploring both, I think I&rsquo;m going with Angular because of the support for it.  I think it will be easier to solve any problems that I have with it because of its popularity.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A Blogging Habit]]></title>
