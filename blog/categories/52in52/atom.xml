@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 52in52 | Chris W Jones]]></title>
   <link href="http://magikid.github.io/blog/categories/52in52/atom.xml" rel="self"/>
   <link href="http://magikid.github.io/"/>
-  <updated>2015-03-12T21:10:04-04:00</updated>
+  <updated>2015-03-18T21:01:21-04:00</updated>
   <id>http://magikid.github.io/</id>
   <author>
     <name><![CDATA[Chris W Jones]]></name>
@@ -12,6 +12,91 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Creating an API]]></title>
+    <link href="http://magikid.github.io/52in52/2015/03/18/creating-an-api/"/>
+    <updated>2015-03-18T19:25:10-04:00</updated>
+    <id>http://magikid.github.io/52in52/2015/03/18/creating-an-api</id>
+    <content type="html"><![CDATA[<p>This week, I have been working hard to add an <abbr title="Application Programming Interface">API</abbr> to a website that I wrote.  I&rsquo;m going to explain what an API is and why I want one for this website.</p>
+
+<p>When you visit a website, your browser uses a protocol called HTTP.  HTTP is made up of verbs that describe interactions with the server.  When you visit <a href="http://christopherjones.us"><a href="http://christopherjones.us">http://christopherjones.us</a></a>, your browser uses the HTTP verb GET because you want to &ldquo;get&rdquo; the page.  When you log in to a website, your browser uses the verb POST like you&rsquo;re mailing the data to the server.  There are a bunch of other verbs used as well but I&rsquo;m not going to get into them.  After doing a GET request, the server located at <a href="http://christopherjones.us"><a href="http://christopherjones.us">http://christopherjones.us</a></a> responds with the page you requested, its response will look something like:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;pre&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>head<span class="ni">&amp;gt;</span>
+</span><span class='line'>    <span class="ni">&amp;lt;</span>title<span class="ni">&amp;gt;</span>Chris W Jones<span class="ni">&amp;lt;</span>/title<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="ni">&amp;lt;</span>/head<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="ni">&amp;lt;</span>body<span class="ni">&amp;gt;</span>...<span class="ni">&amp;lt;</span>/body<span class="ni">&amp;gt;</span>
+</span><span class='line'><span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">&lt;p&gt;&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Believe it or not, that response is hard for a computer to read.  The difficulty comes from the fact that anything can be in between those <code>&lt;body&gt;</code> tags.  It could be a picture of a cat or it could be the entire text of the Illiad.  Computers don&rsquo;t do so well with that much ambigity which is why developers use APIs.  APIs are the computer&rsquo;s interface to a website.</p>
+
+<p>When designing an API, developers think about what kinds of information that users will want to use from their site.  For example in my Bibliophilum website, I might have an API endpoint that allows users to request the books in their library.  Another endpoint might allow users to see which books are currently loaned from their library.  When a user wants the list of their books, they&rsquo;ll do a GET request to that endpoint and the server will respond with something that a computer can understand like:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="err">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">&lt;p&gt;</span><span class="p">[</span><span class="err">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">&lt;pre&gt;&lt;code&gt;</span><span class="p">{</span>
+</span><span class='line'>    <span class="err">id:</span> <span class="err">1,</span>
+</span><span class='line'>    <span class="err">title:</span> <span class="nt">&quot;Moby Dick&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="err">author:</span> <span class="nt">&quot;Herman Melville&quot;</span>
+</span><span class='line'><span class="p">},</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="err">id:</span> <span class="err">2,</span>
+</span><span class='line'>    <span class="err">title:</span> <span class="nt">&quot;Accelerando&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="err">author:</span> <span class="nt">&quot;Charles Stross&quot;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="err">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">&lt;p&gt;</span><span class="p">]</span><span class="err">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="err">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>The format of the response from the server is usually documented and doesn&rsquo;t change.  This allows the computer using the API to understand the data received.</p>
+
+<p>I really wanted to develop an API for this website because of a new trend in web development.  This trend is towards using a single page to serve the whole website and requesting the different pages in the background.  Gmail is a good example of a single page application (SPA) like this.</p>
+
+<p>In the traditional client/server architecture, your browser sends a GET request to my server.  My server responds with the page.  You click the link which sends another GET request for that page which my server responds with.  In the SPA architecture, your browser sends a GET request for my main page.  After that, when you click a link on the page the page rewrites itself to be the new page, requesting additional data from the server as needed.</p>
+
+<p>The main benefit of using this SPA is that the processing power my server would use to generate the page is offloaded to your browser saving me bandwidth and electricity.  The API comes into this when the SPA requets additional data as needed.  It needs to be able to understand the data so it queries the API.</p>
+
+<p>That is an overview of what APIs are and one way that they&rsquo;re used.  Next week, I&rsquo;m going to explore a specific way to implement an API in Rails using a gem called Grape.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Busy Life]]></title>

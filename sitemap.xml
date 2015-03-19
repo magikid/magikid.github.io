@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://magikid.github.io/52in52/2015/03/18/creating-an-api/</loc>
+    <lastmod>2015-03-18T19:25:10-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://magikid.github.io/52in52/2015/03/12/busy-life/</loc>
     <lastmod>2015-03-12T21:01:25-04:00</lastmod>
     <priority>0.8</priority>
@@ -113,21 +119,21 @@
   
   <url>
     <loc>http://magikid.github.io/blog/</loc>
-    <lastmod>2015-03-12T21:10:04-04:00</lastmod>
+    <lastmod>2015-03-18T21:01:21-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://magikid.github.io/blog/archives/</loc>
-    <lastmod>2015-03-12T21:10:04-04:00</lastmod>
+    <lastmod>2015-03-18T21:01:21-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://magikid.github.io/subscribe/</loc>
-    <lastmod>2015-03-12T21:10:04-04:00</lastmod>
+    <lastmod>2015-03-18T21:01:21-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -135,7 +141,7 @@
   
   <url>
     <loc>http://magikid.github.io/index.html</loc>
-    <lastmod>2015-02-28T16:58:1425160680Z</lastmod>
+    <lastmod>2015-03-18T19:34:1426721688Z</lastmod>
     <priority>0.6</priority>
   </url>
   
