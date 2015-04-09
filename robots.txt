@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://magikid.github.io/sitemap.xml
+Sitemap: https://christopherjones.us/sitemap.xml

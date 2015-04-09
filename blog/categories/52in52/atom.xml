@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 52in52 | Chris W Jones]]></title>
-  <link href="http://magikid.github.io/blog/categories/52in52/atom.xml" rel="self"/>
-  <link href="http://magikid.github.io/"/>
-  <updated>2015-04-08T22:12:23-04:00</updated>
-  <id>http://magikid.github.io/</id>
+  <link href="https://christopherjones.us/blog/categories/52in52/atom.xml" rel="self"/>
+  <link href="https://christopherjones.us/"/>
+  <updated>2015-04-08T22:27:15-04:00</updated>
+  <id>https://christopherjones.us/</id>
   <author>
     <name><![CDATA[Chris W Jones]]></name>
     <email><![CDATA[chris@christopherjones.us]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Tools]]></title>
-    <link href="http://magikid.github.io/52in52/2015/04/08/tools/"/>
+    <link href="https://christopherjones.us/52in52/2015/04/08/tools/"/>
     <updated>2015-04-08T19:45:04-04:00</updated>
-    <id>http://magikid.github.io/52in52/2015/04/08/tools</id>
+    <id>https://christopherjones.us/52in52/2015/04/08/tools</id>
     <content type="html"><![CDATA[<p>This week I&rsquo;m doing the obligatory post about the tools that I use to program.  Let&rsquo;s start out with the tools I use:<!-- more -->
 &ndash; Sublime Text
 &ndash; Linux Virtual Machine
@@ -40,9 +40,9 @@
   
   <entry>
     <title type="html"><![CDATA[Using Active Model Serializers]]></title>
-    <link href="http://magikid.github.io/52in52/api/2015/04/01/using-active-model-serializers/"/>
+    <link href="https://christopherjones.us/52in52/api/2015/04/01/using-active-model-serializers/"/>
     <updated>2015-04-01T19:00:00-04:00</updated>
-    <id>http://magikid.github.io/52in52/api/2015/04/01/using-active-model-serializers</id>
+    <id>https://christopherjones.us/52in52/api/2015/04/01/using-active-model-serializers</id>
     <content type="html"><![CDATA[<p>Boy, this one is late. I blame moving. Hilary and I finally got the keys to our new place and have started moving in.  Last time I wrote about programming, I discussed APIs. In this post, I want to continue in the same theme and discuss implementing an API in a Rails application.</p>
 
 <!-- more -->
@@ -96,9 +96,9 @@
   
   <entry>
     <title type="html"><![CDATA[On Pause This Week]]></title>
-    <link href="http://magikid.github.io/52in52/2015/03/25/on-pause-this-week/"/>
+    <link href="https://christopherjones.us/52in52/2015/03/25/on-pause-this-week/"/>
     <updated>2015-03-25T21:10:30-04:00</updated>
-    <id>http://magikid.github.io/52in52/2015/03/25/on-pause-this-week</id>
+    <id>https://christopherjones.us/52in52/2015/03/25/on-pause-this-week</id>
     <content type="html"><![CDATA[<p>I was planning on writing another post about creating an API but I&rsquo;m exhausted.  This weekend Hilary and I moved our worldly possesions into some <a href="http://www.uhaul.com/UBox/">U-Haul U-Boxes</a>.  We finished moving out of our apartment today and as of 2pm, we&rsquo;re officially homeless for a week until our new townhome is available.</p>
 
 <p>With all this flurry of activity, I just don&rsquo;t have it in me to write a blog post about how to create an API for a website using the Grape gem.  Check back next week for a new article!</p>
@@ -107,9 +107,9 @@
   
   <entry>
     <title type="html"><![CDATA[Creating an API]]></title>
-    <link href="http://magikid.github.io/52in52/api/2015/03/18/creating-an-api/"/>
+    <link href="https://christopherjones.us/52in52/api/2015/03/18/creating-an-api/"/>
     <updated>2015-03-18T19:25:10-04:00</updated>
-    <id>http://magikid.github.io/52in52/api/2015/03/18/creating-an-api</id>
+    <id>https://christopherjones.us/52in52/api/2015/03/18/creating-an-api</id>
     <content type="html"><![CDATA[<p>Part 1 in my series on creating an API in Rails.  Here&rsquo;s <a href="/52in52/api/2015/04/01/using-grape-api/">part 2</a>.</p>
 
 <p>This week, I have been working hard to add an <abbr title="Application Programming Interface">API</abbr> to a website that I wrote.  I&rsquo;m going to explain what an API is and why I want one for this website.</p>
@@ -194,9 +194,9 @@
   
   <entry>
     <title type="html"><![CDATA[Busy Life]]></title>
-    <link href="http://magikid.github.io/52in52/2015/03/12/busy-life/"/>
+    <link href="https://christopherjones.us/52in52/2015/03/12/busy-life/"/>
     <updated>2015-03-12T21:01:25-04:00</updated>
-    <id>http://magikid.github.io/52in52/2015/03/12/busy-life</id>
+    <id>https://christopherjones.us/52in52/2015/03/12/busy-life</id>
     <content type="html"><![CDATA[<p>Life Is getting busy for me. In about two weeks my wife, Hilary, and I will be moving. In addition to that, I have an astronomy class that just finished and a discrete math class that starts on Monday. I also have a busy schedule when I&rsquo;m at work.</p>
 
 <p>This isn&rsquo;t the first time that I have found the pace of life picking up.  I have found that when I get stressed out about having a lot on my plate, the best thing I can do is control what I can and try to not let the rest bother me.  That means that I have been making schedules and lists for the upcoming move and taking things in stride when the don&rsquo;t work out like I want.  For example, a townhouse that we were interested was pulled off the market the day that we were going to view it. Frustrating.</p>

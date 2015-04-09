@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Api | Chris W Jones]]></title>
-  <link href="http://magikid.github.io/blog/categories/api/atom.xml" rel="self"/>
-  <link href="http://magikid.github.io/"/>
-  <updated>2015-04-08T22:12:23-04:00</updated>
-  <id>http://magikid.github.io/</id>
+  <link href="https://christopherjones.us/blog/categories/api/atom.xml" rel="self"/>
+  <link href="https://christopherjones.us/"/>
+  <updated>2015-04-08T22:27:15-04:00</updated>
+  <id>https://christopherjones.us/</id>
   <author>
     <name><![CDATA[Chris W Jones]]></name>
     <email><![CDATA[chris@christopherjones.us]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Using Active Model Serializers]]></title>
-    <link href="http://magikid.github.io/52in52/api/2015/04/01/using-active-model-serializers/"/>
+    <link href="https://christopherjones.us/52in52/api/2015/04/01/using-active-model-serializers/"/>
     <updated>2015-04-01T19:00:00-04:00</updated>
-    <id>http://magikid.github.io/52in52/api/2015/04/01/using-active-model-serializers</id>
+    <id>https://christopherjones.us/52in52/api/2015/04/01/using-active-model-serializers</id>
     <content type="html"><![CDATA[<p>Boy, this one is late. I blame moving. Hilary and I finally got the keys to our new place and have started moving in.  Last time I wrote about programming, I discussed APIs. In this post, I want to continue in the same theme and discuss implementing an API in a Rails application.</p>
 
 <!-- more -->
@@ -71,9 +71,9 @@
   
   <entry>
     <title type="html"><![CDATA[Creating an API]]></title>
-    <link href="http://magikid.github.io/52in52/api/2015/03/18/creating-an-api/"/>
+    <link href="https://christopherjones.us/52in52/api/2015/03/18/creating-an-api/"/>
     <updated>2015-03-18T19:25:10-04:00</updated>
-    <id>http://magikid.github.io/52in52/api/2015/03/18/creating-an-api</id>
+    <id>https://christopherjones.us/52in52/api/2015/03/18/creating-an-api</id>
     <content type="html"><![CDATA[<p>Part 1 in my series on creating an API in Rails.  Here&rsquo;s <a href="/52in52/api/2015/04/01/using-grape-api/">part 2</a>.</p>
 
 <p>This week, I have been working hard to add an <abbr title="Application Programming Interface">API</abbr> to a website that I wrote.  I&rsquo;m going to explain what an API is and why I want one for this website.</p>
