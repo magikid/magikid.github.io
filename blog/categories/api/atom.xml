@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 52in52 | Chris W Jones]]></title>
-  <link href="http://magikid.github.io/blog/categories/52in52/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Api | Chris W Jones]]></title>
+  <link href="http://magikid.github.io/blog/categories/api/atom.xml" rel="self"/>
   <link href="http://magikid.github.io/"/>
   <updated>2015-04-08T22:10:13-04:00</updated>
   <id>http://magikid.github.io/</id>
@@ -12,31 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Tools]]></title>
-    <link href="http://magikid.github.io/52in52/2015/04/08/tools/"/>
-    <updated>2015-04-08T19:45:04-04:00</updated>
-    <id>http://magikid.github.io/52in52/2015/04/08/tools</id>
-    <content type="html"><![CDATA[<p>This week I&rsquo;m doing the obligatory post about the tools that I use to program.  Let&rsquo;s start out with the tools I use:<!-- more -->
-&ndash; Sublime Text
-&ndash; Linux Virtual Machine
-&ndash; Git
-&ndash; rvm</p>
-
-<p>With those, I can conquer anything thrown my way.</p>
-
-<p>I&rsquo;m a recent convert to Sublime Text.  Before that, I mainly used Notepad++.  I love it&rsquo;s speed mainly.  Using Notepad++ with a lot of files in a project causes it to move deathly slow.  I&rsquo;ve yet to notice a slow down in Sublime Text.  In addition, I enjoy the robust plugin support and the theming support.</p>
-
-<p>As linux virtual machines go, I keep one running at <a href="https://www.digitalocean.com/?refcode=3afd2090e2b9">Digital Ocean</a>.  Nothing too massive but one that I use for my development.  I keep my development directory in sync with it using a VPN.  Developing on Windows sucks.  I never know when a package won&rsquo;t run correctly or if there is some weird quirk for installing it.  It&rsquo;s so much easier to just develop in *nix.</p>
-
-<p><a href="https://git-scm.herokuapp.com/">Git</a>, how I love thee.  Git is the version control system that I use.  I&rsquo;ve poked around with Subversion and mercurial too just so that I know them.  My work has been saved more than once because I checked it into the git repository.  Git tracks the changes to the files and allows me to move between versions of the files.  So awesome.</p>
-
-<p>Finally, <a href="https://rvm.io/">rvm</a> for Ruby development.  Using rvm, I can easily manage the version of ruby intalled in my development environment.  I find it super useful when I&rsquo;m working on other projects.  When they are using an older version of ruby for some reason, rvm gracefully switches to their version so that I&rsquo;m developing like them.</p>
-
-<p>That&rsquo;s all for this week, I hope you enjoyed it!</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Using Active Model Serializers]]></title>
@@ -91,17 +66,6 @@
 <p>The attribute line specifies which parts of the model to expose in your API.  The has_many line tells AMS to expose that there decks and cards are related.  The neat part of this is the <code>embed :ids</code> line.  Taking that line out AMS will include the cards that are associated with the deck in the JSON response.  With that line in, AMS will simply give you the ids instead of the whole card object.</p>
 
 <p>I love using AMS for creating JSON responses.  Next week I&rsquo;ll combine what I talked about APIs with AMS and Grape.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[On Pause This Week]]></title>
-    <link href="http://magikid.github.io/52in52/2015/03/25/on-pause-this-week/"/>
-    <updated>2015-03-25T21:10:30-04:00</updated>
-    <id>http://magikid.github.io/52in52/2015/03/25/on-pause-this-week</id>
-    <content type="html"><![CDATA[<p>I was planning on writing another post about creating an API but I&rsquo;m exhausted.  This weekend Hilary and I moved our worldly possesions into some <a href="http://www.uhaul.com/UBox/">U-Haul U-Boxes</a>.  We finished moving out of our apartment today and as of 2pm, we&rsquo;re officially homeless for a week until our new townhome is available.</p>
-
-<p>With all this flurry of activity, I just don&rsquo;t have it in me to write a blog post about how to create an API for a website using the Grape gem.  Check back next week for a new article!</p>
 ]]></content>
   </entry>
   
@@ -189,21 +153,6 @@
 <p>The main benefit of using this SPA is that the processing power my server would use to generate the page is offloaded to your browser saving me bandwidth and electricity.  The API comes into this when the SPA requets additional data as needed.  It needs to be able to understand the data so it queries the API.</p>
 
 <p>That is an overview of what APIs are and one way that they&rsquo;re used.  Next week, I&rsquo;m going to explore a specific way to implement an API in Rails using a gem called Grape.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Busy Life]]></title>
-    <link href="http://magikid.github.io/52in52/2015/03/12/busy-life/"/>
-    <updated>2015-03-12T21:01:25-04:00</updated>
-    <id>http://magikid.github.io/52in52/2015/03/12/busy-life</id>
-    <content type="html"><![CDATA[<p>Life Is getting busy for me. In about two weeks my wife, Hilary, and I will be moving. In addition to that, I have an astronomy class that just finished and a discrete math class that starts on Monday. I also have a busy schedule when I&rsquo;m at work.</p>
-
-<p>This isn&rsquo;t the first time that I have found the pace of life picking up.  I have found that when I get stressed out about having a lot on my plate, the best thing I can do is control what I can and try to not let the rest bother me.  That means that I have been making schedules and lists for the upcoming move and taking things in stride when the don&rsquo;t work out like I want.  For example, a townhouse that we were interested was pulled off the market the day that we were going to view it. Frustrating.</p>
-
-<p>Two points that I always keep on my schedule though are reading and programming.  Sometimes <a href="https://pinboard.in/u:magikid/t:feedly/">they overlap</a> when I get especially busy. Currently, I&rsquo;m reading <a href="https://www.goodreads.com/review/show/913989470">Murder at the Vicarage</a> by Agatha Christie.  It&rsquo;s a little outside my usual genre of hard sci-fi/space opera but I&rsquo;m enjoying it so far.  It&rsquo;s going to be a quick read.</p>
-
-<p>As for programming, I&rsquo;m still working on my bibliophilium site but slowly. I want to start correctly so that I don&rsquo;t get a few months in and wish I had done things differently.  That involves researching implementations.  Also, moving kind of eats into my programming time.</p>
 ]]></content>
   </entry>
   

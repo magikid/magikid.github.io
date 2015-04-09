@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Using Active Model Serializers - Chris W Jones</title>
+  <meta name="author" content="Chris W Jones">
+
+  
+  <meta name="description" content="Boy, this one is late. I blame moving. Hilary and I finally got the keys to our new place and have started moving in. Last time I wrote about &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://magikid.github.io/52in52/api/2015/04/01/using-active-model-serializers">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Chris W Jones" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1219496-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   class="collapse-sidebar sidebar-footer" >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chris W Jones</a></h1>
+  
+    <h2>Hobbiest programmer</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss email">
+  <li><a href="/atom.xml" title="subscribe via RSS"><i class="fa fa-2x fa-rss-square"></i></a></li>
+  
+    <li class="fix-email"><a href="/subscribe/index.html" title="subscribe via email"><i class="fa fa-2x fa-envelope-square"></i></a></li>
+  
+</ul>
+  
+  
+<ul class="subscription">
+  <li><a href="https://pinboard.in/u:magikid" title="Latest Pinboard Bookmarks" target="_blank"><i class="fa fa-2x fa-bookmark"></i></a></li>
+</ul>
+  
+  
+  
+  
+<ul class="subscription">
+  <li><a href="https://github.com/magikid" title="@magikid on GitHub" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
+</ul>
+  
+  
+<ul class="subscription">
+  <li><a href="https://gratipay.com/magikid" title="@magikid on Gratipay" target="_blank"><i class="fa fa-2x fa-gratipay"></i></a></li>
+</ul>
+  
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:magikid.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      
+        <h1 class="entry-title">Using Active Model Serializers</h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-04-01T19:00:00-04:00" pubdate data-updated="true">Apr 1<sup>st</sup>, 2015</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Boy, this one is late. I blame moving. Hilary and I finally got the keys to our new place and have started moving in.  Last time I wrote about programming, I discussed APIs. In this post, I want to continue in the same theme and discuss implementing an API in a Rails application.</p>
+
+<!-- more -->
+
+
+<p>Rails has a great, simple way to output standard JSON instead of an HTML document.</p>
+
+<figure class='code'><figcaption><span>app/controllers/flashcards_controller.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">FlashcardsController</span> <span class="o">&lt;</span> <span class="no">ApplicationController</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">index</span>
+</span><span class='line'>    <span class="n">render</span> <span class="ss">json</span><span class="p">:</span> <span class="no">Deck</span><span class="o">.</span><span class="n">all</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That block of code would output all of the Decks in the database as a JSON object.  The problem is that it doesn&rsquo;t give you much control over it.  What if you had a relation where each deck <code>has_many: cards</code>?  That controller wouldn&rsquo;t give you any indication about it.  That&rsquo;s where a handy gem called <a href="https://github.com/rails-api/active_model_serializers">active_model_serializers</a> comes in.  Active model serializers gives you very fine control over what is output in JSON.</p>
+
+<p>The way it works is you create a file in the serializers directory for each model.  Then you can define exactly which attributes are output as JSON as well as how they&rsquo;re output.  This is what a simple AMS looks like for a model Deck(id: number, title:string, public: boolean, card_id: number).</p>
+
+<figure class='code'><figcaption><span>app/serializers/deck_serializer.rb </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">DeckSerializer</span> <span class="o">&lt;</span> <span class="no">ActiveModel</span><span class="o">::</span><span class="no">Serializer</span>
+</span><span class='line'>  <span class="n">embed</span> <span class="ss">:ids</span>
+</span><span class='line'>  <span class="n">attributes</span> <span class="ss">:id</span><span class="p">,</span> <span class="ss">:title</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">has_many</span> <span class="ss">:cards</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The attribute line specifies which parts of the model to expose in your API.  The has_many line tells AMS to expose that there decks and cards are related.  The neat part of this is the <code>embed :ids</code> line.  Taking that line out AMS will include the cards that are associated with the deck in the JSON response.  With that line in, AMS will simply give you the ids instead of the whole card object.</p>
+
+<p>I love using AMS for creating JSON responses.  Next week I&rsquo;ll combine what I talked about APIs with AMS and Grape.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Authored by <span class="fn">Chris W Jones</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-04-01T19:00:00-04:00" pubdate data-updated="true">Apr 1<sup>st</sup>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/52in52/'>52in52</a>, <a class='category' href='/blog/categories/api/'>api</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://magikid.github.io/52in52/api/2015/04/01/using-active-model-serializers/" data-via="magikid" data-counturl="http://magikid.github.io/52in52/api/2015/04/01/using-active-model-serializers/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/52in52/2015/03/25/on-pause-this-week/" title="Previous Post: On Pause This Week">&laquo; On Pause This Week</a>
+      
+      
+        <a class="basic-alignment right" href="/52in52/2015/04/08/tools/" title="Next Post: Tools">Tools &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Chris W Jones -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a> | Themed with <a href="https://github.com/lucaslew/whitespace">Whitespace</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
