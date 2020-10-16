@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Scheduler</title>
+  <meta name="description" content="Show who's up next to run the meetings">
+  <meta name="author" content="magikid">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div id="app" class="container">
+    <section id="up-next" class="row">
+      <h1 class="col-sm-5"><small>Today's victim</small>{{nextPerson}}</h1>
+      <button class="shadowed col-sm primary" @click="advance">Meeting over</button>
+    </section>
+    <section id="order" class="row">
+    <h3 class="col-sm-2">Order</h3>
+    <ol class="col-sm">
+      <li v-for="member in teamMembers">
+        <a href="#" @click="moveUp(member)">🔼</a><a href="#" @click="moveDown(member)">🔽</a><a href="#" @click="removeMember(member)">❌</a> {{ member }}
+      </li>
+    </ol>
+    </section>
+    <section id="settings" class="row">
+      <h3 class="col-sm-2">Settings</h3>
+      <div class="col-sm">
+        <fieldset class="input-group vertical">
+          <label for="last-person">Last person:</label>
+          <select id="last-person "v-model="lastPerson">
+            <option disabled value="">Please select one</option>
+            <option v-for="member in teamMembers">
+              {{ member }}
+            <option>
+          </select>
+          <label for="new-member">Add a new member:</label>
+          <input id="new-member" v-on:keyup.enter="persist" v-model="newMember">
+        </fieldset>
+      </div>
+    <section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
