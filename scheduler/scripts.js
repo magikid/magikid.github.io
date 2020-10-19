@@ -5,7 +5,6 @@
       teamMembers: ["Chris"],
       lastPerson: "",
       newMember: "",
-      order: [0],
     },
     mounted() {
       if (localStorage.teamMembers) {
@@ -13,9 +12,6 @@
       }
       if (localStorage.lastPerson) {
         this.lastPerson = localStorage.lastPerson;
-      }
-      if (localStorage.order) {
-        this.order = localStorage.order;
       }
     },
     watch: {
@@ -32,12 +28,9 @@
           return;
         }
         this.teamMembers.push(this.newMember);
-        console.log("Saved new member!");
-        newMemberIndex = this.teamMembers.indexOf(this.newMember);
-        this.order.push(newMemberIndex);
-        console.log("Order: " + JSON.stringify(this.order));
         this.newMember = "";
         this.saveState();
+        console.log("Saved new member!");
       },
       moveUp(member) {
         currentIndex = this.teamMembers.indexOf(member);
