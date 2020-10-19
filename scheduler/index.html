@@ -31,6 +31,8 @@
       <h3 class="col-sm-2">Settings</h3>
       <div class="col-sm">
         <fieldset class="input-group vertical">
+          <label for="new-member">Add a new member:</label>
+          <input id="new-member" v-on:keyup.enter="persist" v-model="newMember">
           <label for="last-person">Last person:</label>
           <select id="last-person "v-model="lastPerson">
             <option disabled value="">Please select one</option>
@@ -38,8 +40,6 @@
               {{ member }}
             <option>
           </select>
-          <label for="new-member">Add a new member:</label>
-          <input id="new-member" v-on:keyup.enter="persist" v-model="newMember">
         </fieldset>
       </div>
     <section>
