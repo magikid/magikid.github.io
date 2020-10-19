@@ -34,7 +34,7 @@
           <label for="new-member">Add a new member:</label>
           <input id="new-member" v-on:keyup.enter="persist" v-model="newMember">
           <label for="last-person">Last person:</label>
-          <select id="last-person "v-model="lastPerson">
+          <select id="last-person" v-model="lastPerson">
             <option disabled value="">Please select one</option>
             <option v-for="member in teamMembers">
               {{ member }}
